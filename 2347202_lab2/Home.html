@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body {
+        background:linear-gradient(rgb(23, 22, 22),rgb(42, 42, 45),rgb(22, 22, 22));
+        margin: 0;
+    }
+
+    /* Add any custom styles here */
+    .navbar-brand {
+        padding-right: 20px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 10px;
+        /* Add some space between the nav links */
+    }
+
+    /* Optional: Change the color of the active link */
+    .navbar-nav .nav-item .nav-link.active {
+        color: #ff0000;
+        /* Replace with your desired color */
+    }
+
+    .img {
+        border-radius: 50px;
+    }
+
+    .developer-info {
+        text-align: center;
+        background: linear-gradient(rgba(0, 0, 0, 0),white,rgba(0, 0, 0, 0.027));
+    }
+
+    .slide2{
+        height: 1000px;
+        margin: 50px;
+    }
+
+    .namediv {
+        padding-top: 17%;
+        padding-bottom: 17%;
+        width: 100%;
+  height: 100vh;
+  background: url('./pexels-miguel-á-padriñán-1591060.jpg') ;
+  background-size: cover;
+  position: relative;
+            overflow: hidden;
+    }
+
+    .developer-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    
+    /* Styles for each slide */
+    .slide-item {
+        display: none;
+    }
+
+    .slide-item.active {
+        display: block;
+    }
+
+
+    .carousel-caption {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 20px;
+    }
+
+    .carousel-caption h2 {
+        color: #fff;
+    }
+    footer{
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="./Home.html">
+                <img class="img" src="./Remini20210529232848764.jpg" alt="Logo" height="30">
+                PortMine
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gallery.html"><i class="fa-regular fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Gallery.html"><i class="fa-regular fa-file-image"></i> Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Registration.html"><i class="fa-brands fa-uniregistry"></i> Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-regular fa-address-card"></i> Contact</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class=" namediv">
+        <div class="">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="developer-info">
+                    <div class="developer-name">
+                        <h2>Welcome to my Portfolio</h2>
+                    </div>
+                    <div class="developer-name"><strong>I'm Abin Sibi</strong> </div>
+                    <p>
+                        <strong>I am a passionate web developer with experience in HTML, CSS, and JavaScript. I love
+                            building responsive and user-friendly websites that make a difference. My goal is to create
+                            innovative and efficient solutions for clients and users.</strong>
+                    </p>
+                    <button class="rounded bg-dark text-light" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#heroModal3">About</button>
+                    <h1><></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="heroModal3" tabindex="-1" aria-labelledby="heroModal3Label" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="heroModal3Label">Hero 3 Details</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis expedita fugiat aspernatur necessitatibus itaque ducimus unde, nulla minima, nobis magnam iusto. Quaerat aut iusto necessitatibus sed consequuntur est? Eveniet, earum?
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus, culpa veniam voluptas sit tempore eaque iusto! Maxime eius officiis obcaecati asperiores debitis, dolor accusamus. Obcaecati adipisci id impedit natus asperiores.
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur tenetur a quidem ullam repudiandae ut deserunt possimus nulla beatae asperiores suscipit, quibusdam, nobis, quod magni commodi quis eius? Officiis, perspiciatis!
+            </div>
+          </div>
+        </div>
+      </div><hr>
+    <div class="developer-info pt-5 slide2">
+        <h2 class="text-lightbor rounded bg-dark p-3 my-3 w-30 m-auto text-white">Services provided</h2>
+        <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators ">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner ">
+                <div class="carousel-item slide-item active">
+                    <img src="./pexels-pixabay-276225.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Web Designing </h2>
+                        <h5>I'm a tech enthusiast specializing in web and app development,
+                            constantly pushing the boundaries of what's possible in the digital realm.</h5>
+                    </div>
+                </div>
+                <!-- Slide 2 -->
+                <div class="carousel-item slide-item">
+                    <img src="./pexels-christina-morillo-1181380.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Web Devolopement</h2>
+                        <h5>I'm a tech enthusiast specializing in web and app development,
+                            constantly pushing the boundaries of what's possible in the digital realm.</h5>
+                    </div>
+                </div>
+                <!-- Slide 3 -->
+                <div class="carousel-item slide-item">
+                    <img src="./pexels-markus-spiske-2004163.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Web Deployment </h2>
+                        <h5>I'm a tech enthusiast specializing in web and app development,
+                            constantly pushing the boundaries of what's possible in the digital realm.</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+        <footer class="foot text-light bg-dark">
+            <div>
+             Copyright © 2023 Abin Sibi
+            </div>
+        
+        </footer>
+    </body>
+
+</html>

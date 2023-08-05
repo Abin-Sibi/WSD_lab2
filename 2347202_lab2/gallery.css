@@ -1,0 +1,47 @@
+body{
+    padding:0px;
+    margin: 0;
+    font-family: Arial sans-serif;
+    background: black;
+}
+.flex-container
+{
+display: flex;
+flex-direction:row; /* column, row-reverse, column-reverse */
+margin-top: 10px;
+height: 22em;
+
+}
+
+.images{
+    height: 200px;
+    width: 190px;
+}
+.flex-item
+{
+    color: aliceblue;
+    width: max-content;
+    font-size: 1.2em;
+    text-align: center;
+    margin-left: 12px;
+    padding: 1em;
+    height:max-content;
+}
+.flex-item-01
+{
+    background: linear-gradient(blue,red,black);
+    box-shadow: 5px 8px rgba(83, 68, 45, 0.695);
+    border-radius: 10px;
+
+}
+.flex-item strong
+{
+    display: block;
+    font-size: 130%;
+}
+.buttonview{
+    border-radius: 10px;
+    background: linear-gradient(rgb(215, 48, 48),rgb(51, 51, 116),rgb(47, 45, 45));
+    color: white;
+    height: 35px;
+}
